@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './SmurfForm.css';
+import { connect } from 'react-redux';
+import { addSmurf } from '../actions';
 
 class SmurfForm extends Component {
     state = {
@@ -11,7 +13,9 @@ class SmurfForm extends Component {
     }
 
     addSmurf = (e, smurf) => {
-        return null
+        e.preventDefault();
+        this.props.addSmurf(smurf)
+        this.props.history.push("/")
     }
 
     handleInputChange = e => {
@@ -56,4 +60,4 @@ render() {
 
 }
 
-export default SmurfForm;
+export default connect(null, { addSmurf })(SmurfForm)

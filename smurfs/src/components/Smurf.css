@@ -32,8 +32,8 @@
     height: 30px;
     border-radius: 4px;
     color: white;
-    background-color: maroon;
-    border: 1px solid maroon;
+    background-color: black;
+    border: 1px solid black;
     align-self: baseline;
     font-size: 1.8rem;
     margin: 2px 2px 0 0;
@@ -48,7 +48,8 @@
   .edit button {
     width: 200px;
     height: 50px;
-    background-color: black;
+    background-color: blueviolet;
+    border-radius: 25px;
     color: white;
     font-size: 2rem;
     border: 1px solid black;

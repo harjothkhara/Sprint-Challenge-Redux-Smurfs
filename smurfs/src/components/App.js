@@ -16,7 +16,7 @@ class App extends Component {
     <Router>
       <div className="App">
         <Navigation /> 
-        <Route path="/" component={Smurfs} />
+        <Route exact path="/" component={Smurfs} />
         <Route path="/smurf-form" component={SmurfForm} />
       </div>
     </Router>   
