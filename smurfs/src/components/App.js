@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Smurfs from './Smurfs';
+import Navigation from './Navigation';
+import SmurfForm from './SmurfForm';
 /*
  to wire this component up you're going to need a few things.
  I'll let you do this part on your own. 
@@ -11,9 +13,13 @@ import Smurfs from './Smurfs';
 class App extends Component {
   render() {
     return (
+    <Router>
       <div className="App">
-       <Smurfs />
+        <Navigation /> 
+        <Route path="/" component={Smurfs} />
+        <Route path="/smurf-form" component={SmurfForm} />
       </div>
+    </Router>   
     );
   }
 }
