@@ -10,6 +10,10 @@ class SmurfForm extends Component {
         }
     }
 
+    addSmurf = (e, smurf) => {
+        return null
+    }
+
     handleInputChange = e => {
         e.persist();
         this.setState(prevState => ({
